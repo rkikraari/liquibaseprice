@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/liquibaseprice
+    username: postgres
+    password: root
+
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.xml
+    enabled: true
+
+logging:
+  file:
+    name: price.log
+    org.liquibase: DEBUG
+    com.rajiv: DEBUG
+    root: DEBUG
+
+degub: true
+
+
+
